@@ -4,10 +4,17 @@ It captures image frames, performs light pre-processing, and sends each frame to
 
 This service acts as the bridge between real-world camera feeds and the AI detection pipeline. It ensures that raw footage from multiple sources is efficiently ingested, converted into analyzable image data, and routed through the detection system.
 
-Camera Feed
-   ↓
-Stream-Ingest-Service (frame capture, pre-processing)
-   ↓
-Object-Detector-Service (YOLO, PyTorch)
-   ↓
-Event Broker / Alerting / Dashboard
+## Basic Workflow  
+
+<div align="center">
+
+### Camera Feed  
+↓  
+### Stream-Ingest-Service (frame capture, pre-processing)  
+↓  
+### Object-Detector-Service (YOLO, PyTorch)  
+↓  
+### Event Broker / Alerting / Dashboard  
+
+</div>
+
